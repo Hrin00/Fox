@@ -4,7 +4,7 @@
 横スクロールアクションゲーム  
 Side scrolling action game
 
- Unity Version 2021.3.19f1 在此版本Unity下会报错，但无视错误可正常运行 
+ Unity Version 2021.3.19f1 在此版本Unity下会报错，但无视错误可正常运行  
  Unity Version 2021.3.19f1 でエラがあるが、エラを無視して実行可能  
  Unity Version 2021.3.19f1 have Errors but can run normally
 
