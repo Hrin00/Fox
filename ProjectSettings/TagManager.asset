@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Items
+  - Enemy
+  - Cherry
+  - Gem
+  - House
+  - Roll
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Platf
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2444888581
+    locked: 0
+  - name: Environment
+    uniqueID: 969838889
+    locked: 0
+  - name: Ground
+    uniqueID: 3220895983
+    locked: 0
+  - name: Item
+    uniqueID: 19990451
+    locked: 0
+  - name: Frontground
+    uniqueID: 1541645089
+    locked: 0
+  - name: Player
+    uniqueID: 3185030165
+    locked: 0
+  - name: Platf
+    uniqueID: 3799957689
+    locked: 0
