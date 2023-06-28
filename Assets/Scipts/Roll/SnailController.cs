@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Localization.Settings;
 
 public class SnailController : RollController
 {
@@ -26,9 +26,12 @@ public class SnailController : RollController
     {
         base.Speak();
 
+        var stringTable = LocalizationSettings.StringDatabase.GetTable("LocalizationStringTable");
+
+
         if (GlobalDataSave.Instance.snailIndex == 1)
         {
-            text_Dialog_Main.text = "好饿！我肚子好饿！有谁能给我6颗樱桃聛E";
+            text_Dialog_Main.text = stringTable.GetEntry("Snail1").GetLocalizedString();
             return;
         }
 
@@ -36,7 +39,7 @@ public class SnailController : RollController
         {
             if (cherry.sum >= 6)
             {
-                text_Dialog_Main.text = "諄E颗樱桃是给我的吗？太谢谢你了！\n\n（...咀嚼...咀嚼...）\n\n我吃饱了，这个作为回礼，莵E障掳桑�";
+                text_Dialog_Main.text = stringTable.GetEntry("Snail2").GetLocalizedString();
 
                 GameObject temp = GameObject.Instantiate(gem__Diffuse, new Vector2(transform.position.x, transform.position.y + 1.5f), Quaternion.identity);
                 temp.name = "Gem";
@@ -48,13 +51,13 @@ public class SnailController : RollController
             }
             else
             {
-                text_Dialog_Main.text = "好饿！我肚子好饿！有谁能给我6颗樱桃聛E";
+                text_Dialog_Main.text = stringTable.GetEntry("Snail1").GetLocalizedString();
             }
 
         }
         else
         {
-            text_Dialog_Main.text = "太谢谢你了，说起来西边的小兔子好像打算集苼E颗宝石买梯子，能莵E惆丒丒�吗？";
+            text_Dialog_Main.text = stringTable.GetEntry("Snail3").GetLocalizedString();
         }
 
     }

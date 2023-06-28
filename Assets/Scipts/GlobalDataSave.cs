@@ -11,7 +11,7 @@ public class GlobalDataSave : MonoBehaviour
     public int cherryScore = 0;
     public int gemScore = 0;
     public int life = 3;
-    
+
 
     //Roll
     public bool cherryEnough = false;
@@ -37,7 +37,7 @@ public class GlobalDataSave : MonoBehaviour
 
     private void Awake()
     {
-        //Èç¹ûËûÊÇµÚÒ»¸ö ÄÇInstance»¹Ã»±»¸³Öµ ¸³Îª×Ô¼º Èç¹ûÊÇ¸´ÖÆ³öÀ´µÄÔò²»Îª¿Õ É¾µô¸´ÖÆÆ·
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Ò»ï¿½ï¿½ ï¿½ï¿½Instanceï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Öµ ï¿½ï¿½Îªï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·
         if (Instance == null)
         {
             Instance = this;
@@ -45,17 +45,17 @@ public class GlobalDataSave : MonoBehaviour
 
             itemMap = new Dictionary<string, Vector2>();
 
-            //ÅäÖÃËùÓĞµÄitem
-            itemMap.Add("Out_Cherry1",new Vector2(-2.5f, 0.4f));
-            itemMap.Add("Out_Cherry2",new Vector2(-5.1f, 0.3f));
-            itemMap.Add("Out_Cherry3",new Vector2(-3.6f, 1.3f));
-            itemMap.Add("Out_Cherry4",new Vector2(-48.3f, 0.3f));
-            itemMap.Add("Out_Cherry5",new Vector2(-45.9f, 0.3f));
-            itemMap.Add("Out_Cherry6",new Vector2(-41.0f, -0.5f));
-            itemMap.Add("Out_Gem1",new Vector2(-17.9f, 1.4f));
-            itemMap.Add("Out_Gem2",new Vector2(-14.5f, -1.3f));
-            itemMap.Add("House2_Gem1",new Vector2(-11.7f, -6.5f));
-            itemMap.Add("House2_Gem2",new Vector2(11f, -3.3f));
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½item
+            itemMap.Add("Out_Cherry1", new Vector2(-2.5f, 0.4f));
+            itemMap.Add("Out_Cherry2", new Vector2(-5.1f, 0.3f));
+            itemMap.Add("Out_Cherry3", new Vector2(-3.6f, 1.3f));
+            itemMap.Add("Out_Cherry4", new Vector2(-48.3f, 0.3f));
+            itemMap.Add("Out_Cherry5", new Vector2(-45.9f, 0.3f));
+            itemMap.Add("Out_Cherry6", new Vector2(-41.0f, -0.5f));
+            itemMap.Add("Out_Gem1", new Vector2(-17.9f, 1.4f));
+            itemMap.Add("Out_Gem2", new Vector2(-14.5f, -1.3f));
+            itemMap.Add("House2_Gem1", new Vector2(-11.7f, -6.5f));
+            itemMap.Add("House2_Gem2", new Vector2(11f, -3.3f));
 
             position = new Vector2(-2.5f, -1f);
         }
@@ -74,7 +74,7 @@ public class GlobalDataSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void InstantiateItem()
@@ -84,27 +84,27 @@ public class GlobalDataSave : MonoBehaviour
 
         foreach (KeyValuePair<string, Vector2> itemPair in itemMap)
         {
-            
+
             if (itemPair.Key.Contains(SceneManager.GetActiveScene().name))
             {
                 GameObject item = null;
 
-                //Out_Cherry6ÌØÊâ´¦Àí ·ÀÖ¹ºÍ±³¾°Ò»ÆğÒÆ¶¯
+                //Out_Cherry6ç‰¹æ®Šå¤„ç† é˜²æ­¢å’ŒèƒŒæ™¯ä¸€èµ·ç§»åŠ¨
                 if (itemPair.Key.Contains("Cherry") && !itemPair.Key.Equals("Out_Cherry6"))
                     item = Instantiate(Cherry, itemPair.Value, Quaternion.identity, items.transform);
-                else if(itemPair.Key.Contains("Cherry") && itemPair.Key.Equals("Out_Cherry6"))
+                else if (itemPair.Key.Contains("Cherry") && itemPair.Key.Equals("Out_Cherry6"))
                 {
                     item = Instantiate(Cherry, itemPair.Value, Quaternion.identity);
                 }
                 else if (itemPair.Key.Contains("Gem"))
                 {
-                    if(SceneManager.GetActiveScene().name.Equals("Out"))
+                    if (SceneManager.GetActiveScene().name.Equals("Out"))
                         item = Instantiate(Gem, itemPair.Value, Quaternion.identity, items.transform);
                     else
                         item = Instantiate(Gem_Diffuse, itemPair.Value, Quaternion.identity, items.transform);
                 }
 
-                if(item != null)
+                if (item != null)
                     item.name = itemPair.Key;
             }
         }
@@ -132,6 +132,6 @@ public class GlobalDataSave : MonoBehaviour
             return true;
         }
 
-        return false;     
+        return false;
     }
 }

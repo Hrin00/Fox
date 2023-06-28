@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LocalizationStringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LocalizationStringTable
+  m_TableCollectionNameGuidString: 435a69024db217e44b85f60d1bab9778
+  m_Entries:
+  - m_Id: 2019415470080
+    m_Key: PauseButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311506181468160
+    m_Key: Rabbit1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329301422157824
+    m_Key: Rabbit2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329663197655040
+    m_Key: Rabbit3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329903581605888
+    m_Key: Rabbit4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330144137523200
+    m_Key: Snail1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330146394058752
+    m_Key: Snail2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330686511362048
+    m_Key: Snail3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5375054477880459290
+  references:
+    version: 2
+    RefIds:
+    - rid: 5375054477880459290
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1687880207100

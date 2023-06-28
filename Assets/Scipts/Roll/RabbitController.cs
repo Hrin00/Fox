@@ -12,12 +12,12 @@ public class RabbitController : RollController
     protected override void Start()
     {
         base.Start();
-     }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -27,20 +27,20 @@ public class RabbitController : RollController
 
         if (GlobalDataSave.Instance.rabbitIndex == 1)
         {
-            
+
             text_Dialog_Main.text = "小狐狸你好呀！东边的蜗牛先生已经好几天没吃东西了，你能采6颗樱桃过去给他吃吗！";
             return;
         }
 
         if (cherry.isEnough)
         {
-            if (gem.isEnough) 
+            if (gem.isEnough)
             {
                 text_Dialog_Main.text = "梯子就架在门口了，你快去试试吧！";
             }
             else
             {
-                if(gem.sum >= 5)
+                if (gem.sum >= 5)
                 {
                     text_Dialog_Main.text = "哇！这5颗宝石是送给我的吗?! 太谢谢你了，这样我就能买梯子了。\n等我搭好梯子，你也来试试吧！";
                     gem.sum -= 5;
@@ -59,7 +59,7 @@ public class RabbitController : RollController
         }
 
 
-        
+
 
 
 

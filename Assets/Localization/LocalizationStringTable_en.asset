@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalizationStringTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 435a69024db217e44b85f60d1bab9778, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2019415470080
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311506181468160
+    m_Localized: Hello, Mr. Fox! Mr. Snail in the east hasn't eaten for days. Please
+      pick 6 cherries for him!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329301422157824
+    m_Localized: "(If I could collect 5 gems, I could buy a ladder. \u30FB\u30FB\u30FB\u30FB\u30FB\u30FB)\r\nWow,
+      why did you come back? Mr. Snail is still hungry, so hurry up and pick him
+      6 cherries!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329663197655040
+    m_Localized: 'Hey, you''re back! I see you gave Mr. Snail some cherries. Well,
+      you''re free to go.
+
+      I still have to collect 5 gems to buy a ladder.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329903581605888
+    m_Localized: Wow! Are you going to give me these 5 gems? Thank you so much. Now
+      I can buy a ladder!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330144137523200
+    m_Localized: (Goo) I'm hungry, can someone give me six cherries?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330146394058752
+    m_Localized: 'Can you give me these six cherries? Thank you!
+
+      (Munching...
+      (Giggle... (moo... moo...)
+
+      Thanks for the food, I''ll give you some
+      jewelry in return.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330686511362048
+    m_Localized: Thanks. Speaking of which, I think the western rabbit is trying
+      to collect 5 gems to buy a ladder, can you help?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

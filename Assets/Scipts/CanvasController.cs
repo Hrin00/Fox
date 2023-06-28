@@ -1,7 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
@@ -11,11 +13,19 @@ public class CanvasController : MonoBehaviour
     public AudioMixer audioMixer;
     GameObject bag;
 
+    //Localization
+    public LocalizationSettings localSettings;
+    public Locale zh;
+    public Locale jp;
+    public Locale en;
+
+
     // Start is called before the first frame update
     void Start()
     {
         GameObject root = GameObject.Find("Canvas");
         bag = root.transform.Find("Bag").gameObject;
+
     }
 
     // Update is called once per frame
@@ -26,6 +36,8 @@ public class CanvasController : MonoBehaviour
 
     public void Pause()
     {
+        //设定语言得方法
+        //LocalizationSettings.SelectedLocale = zh;
         Debug.Log("Pause");
         menu.SetActive(true);
         pause.SetActive(false);
