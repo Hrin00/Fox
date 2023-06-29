@@ -64,6 +64,41 @@ MonoBehaviour:
       to collect 5 gems to buy a ladder, can you help?
     m_Metadata:
       m_Items: []
+  - m_Id: 433103206862848
+    m_Localized: 'Press E to '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433508204662784
+    m_Localized: Press E to Enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433620364546048
+    m_Localized: Press E to Check
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433622142930944
+    m_Localized: Press E to Out
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433627796852736
+    m_Localized: Press E to Talk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435363689254912
+    m_Localized: The ladder is already hung at the entrance, so go ahead!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437240489299968
+    m_Localized: 'Caution! There is a monster ahead! \n\n
+
+      Move with the left
+      and right keys, crouch with the down key, and jump with the space key.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 439667938545664
+    m_Localized: Press ESC to Close
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

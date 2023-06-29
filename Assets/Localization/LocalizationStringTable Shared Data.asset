@@ -15,36 +15,68 @@ MonoBehaviour:
   m_TableCollectionName: LocalizationStringTable
   m_TableCollectionNameGuidString: 435a69024db217e44b85f60d1bab9778
   m_Entries:
-  - m_Id: 2019415470080
-    m_Key: PauseButton
-    m_Metadata:
-      m_Items: []
-  - m_Id: 311506181468160
-    m_Key: Rabbit1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 329301422157824
-    m_Key: Rabbit2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 329663197655040
-    m_Key: Rabbit3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 329903581605888
-    m_Key: Rabbit4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 330144137523200
-    m_Key: Snail1
+  - m_Id: 330686511362048
+    m_Key: Snail3
     m_Metadata:
       m_Items: []
   - m_Id: 330146394058752
     m_Key: Snail2
     m_Metadata:
       m_Items: []
-  - m_Id: 330686511362048
-    m_Key: Snail3
+  - m_Id: 330144137523200
+    m_Key: Snail1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 435363689254912
+    m_Key: Rabbit5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329903581605888
+    m_Key: Rabbit4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329663197655040
+    m_Key: Rabbit3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329301422157824
+    m_Key: Rabbit2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311506181468160
+    m_Key: Rabbit1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2019415470080
+    m_Key: PauseButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433103206862848
+    m_Key: dialogSignBase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433627796852736
+    m_Key: dialogSignAdd4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433622142930944
+    m_Key: dialogSignAdd3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433620364546048
+    m_Key: dialogSignAdd2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 433508204662784
+    m_Key: dialogSignAdd1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437240489299968
+    m_Key: dialogMain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 439667938545664
+    m_Key: textDialogMainSign
     m_Metadata:
       m_Items: []
   m_Metadata:

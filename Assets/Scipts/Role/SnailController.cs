@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 
-public class SnailController : RollController
+public class SnailController : RoleController
 {
     public GameObject gem__Diffuse;
 

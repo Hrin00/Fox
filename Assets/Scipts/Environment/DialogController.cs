@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using Mono.Cecil.Cil;
 
 public class DialogController : MonoBehaviour
 {
@@ -21,13 +26,14 @@ public class DialogController : MonoBehaviour
     private bool isTriggerStay = false;
     private Collider2D triggerStayCollider = null;
 
-    RollController roll = null;
+    RoleController roll = null;
 
     private PlayerController playerController;
 
     Slider volume;
-    
-    
+
+
+
 
 
 
@@ -45,6 +51,7 @@ public class DialogController : MonoBehaviour
 
         volume = GameObject.Find("Canvas").transform.Find("Menu/Slider_Volume").GetComponent<Slider>();
 
+
     }
 
     // Update is called once per frame
@@ -59,16 +66,22 @@ public class DialogController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        text_Dialog_Sign.text = "按下E";
+        var stringTable = LocalizationSettings.StringDatabase.GetTable("LocalizationStringTable");
+        //text_Dialog_Sign.text = stringTable.GetEntry("dialogSignBase").GetLocalizedString(LocalizationSettings.SelectedLocaleAsync.Result);
+
+
+        Debug.Log(gameObject.name);
+
+
 
         if (gameObject.name.Contains("house"))
-            text_Dialog_Sign.text += "进入";
-        else if(gameObject.name.Contains("sign"))
-            text_Dialog_Sign.text += "查看";
+            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd1").GetLocalizedString();
+        else if (gameObject.name.Contains("sign"))
+            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd2").GetLocalizedString();
         else if (gameObject.name.Contains("Out"))
-            text_Dialog_Sign.text += "离开";
+            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd3").GetLocalizedString();
         else if (gameObject.tag.Equals("Roll"))
-            text_Dialog_Sign.text += "对话";
+            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd4").GetLocalizedString();
 
 
 
@@ -77,7 +90,7 @@ public class DialogController : MonoBehaviour
 
         if (collision.name.Equals("Player"))
         {
-            
+
             dialog_Sign.SetActive(true);
         }
 
@@ -94,13 +107,13 @@ public class DialogController : MonoBehaviour
 
 
             //人物点开对话框 变为静止站立 （未测试各种情况 例如受伤中对话）
-            triggerStayCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
+            triggerStayCollider.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
             Animator animator = triggerStayCollider.GetComponent<Animator>();
             animator.Play("idle", 0, 0f);
-            animator.SetBool("jumping",false);
-            animator.SetBool("falling",false);
+            animator.SetBool("jumping", false);
+            animator.SetBool("falling", false);
             animator.SetFloat("running", 0f);
-            animator.SetBool("crouching",false);
+            animator.SetBool("crouching", false);
 
 
 
@@ -126,7 +139,7 @@ public class DialogController : MonoBehaviour
             {
                 if (SceneManager.GetActiveScene().name.Equals("House1"))
                     GlobalDataSave.Instance.position = new Vector2(-54f, -2f);
-                else if(SceneManager.GetActiveScene().name.Equals("House2"))
+                else if (SceneManager.GetActiveScene().name.Equals("House2"))
                     GlobalDataSave.Instance.position = new Vector2(15f, 1f);
 
                 GlobalDataSave.Instance.volume = volume.value;
@@ -137,7 +150,8 @@ public class DialogController : MonoBehaviour
                 Debug.Log(intoMainDialog);
                 if (!intoMainDialog)
                 {
-                    text_Dialog_Main.text = "小心!前方有怪物出没!\n\n 左右键控制移动,下键蹲下,空格键跳跃。";
+                    var stringTable = LocalizationSettings.StringDatabase.GetTable("LocalizationStringTable");
+                    text_Dialog_Main.text = stringTable.GetEntry("dialogMain").GetLocalizedString();
                     dialog_Main.SetActive(true);
                     dialog_Sign.SetActive(false);
                     playerController.enabled = false;
@@ -148,7 +162,7 @@ public class DialogController : MonoBehaviour
             }
             else if (gameObject.tag.Equals("Roll"))
             {
-                
+
 
                 Debug.Log(gameObject.name);
 
@@ -165,7 +179,7 @@ public class DialogController : MonoBehaviour
                 intoMainDialog = true;
             }
         }
-            
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -182,13 +196,13 @@ public class DialogController : MonoBehaviour
 
     void JudgeExitMainDialog()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && intoMainDialog)
+        if (Input.GetKeyDown(KeyCode.Escape) && intoMainDialog)
         {
-            if(roll != null)
+            if (roll != null)
             {
                 if (roll.gameObject.name.Equals("Rabbit"))
                     GlobalDataSave.Instance.rabbitIndex++;
-                else if(roll.gameObject.name.Equals("Snail"))
+                else if (roll.gameObject.name.Equals("Snail"))
                     GlobalDataSave.Instance.snailIndex++;
             }
 

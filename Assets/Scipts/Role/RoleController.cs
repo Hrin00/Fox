@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RollController : MonoBehaviour
+public class RoleController : MonoBehaviour
 {
-    
+
 
     protected GameObject dialog_Main;
     protected Text text_Dialog_Main;
@@ -24,7 +24,7 @@ public class RollController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public virtual void Speak()
