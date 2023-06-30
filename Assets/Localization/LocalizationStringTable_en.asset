@@ -89,10 +89,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 437240489299968
-    m_Localized: 'Caution! There is a monster ahead! \n\n
-
-      Move with the left
-      and right keys, crouch with the down key, and jump with the space key.'
+    m_Localized: "Caution! There is a monster ahead! \nMove with the left and right
+      keys, crouch with the down key, and jump with the space key."
     m_Metadata:
       m_Items: []
   - m_Id: 734072306053120

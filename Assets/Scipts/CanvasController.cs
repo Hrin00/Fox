@@ -6,6 +6,7 @@ using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class CanvasController : MonoBehaviour
 {
@@ -68,16 +69,24 @@ public class CanvasController : MonoBehaviour
 
         Time.timeScale = 1f;
         GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;
+
     }
 
     public void RefreshDialogText()
     {
+
         var stringTable = LocalizationSettings.StringDatabase.GetTable("LocalizationStringTable");
         if (GlobalDataSave.dialogAddKey != null)
+        {
             text_Dialog_Sign.text = stringTable.GetEntry(GlobalDataSave.dialogAddKey).GetLocalizedString();
+        }
+
         if (GlobalDataSave.dialogMainKey != null)
+        {
             text_Dialog_Main.text = stringTable.GetEntry(GlobalDataSave.dialogMainKey).GetLocalizedString();
-        text_Dialog_Main_Sign.text = stringTable.GetEntry("textDialogMainSign").GetLocalizedString();
+        }
+
+        //text_Dialog_Main_Sign.text = stringTable.GetEntry("textDialogMainSign").GetLocalizedString();
 
     }
 

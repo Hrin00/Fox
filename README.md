@@ -22,3 +22,9 @@ The localization function was installed and the initial configuration of the tex
 2023/6/30  
 紹介動画アップロード: https://drive.google.com/file/d/1A9CAOQ7rD23anJNGAPONKeCBZMONncK5/view?usp=sharing    
 Localizationバグ修正  
+
+2023/7/1  
+WEBGLで出力する際の文字化けバグ修正、Localization(MainKey)バグ修正、Game Overテキスト修正  
+
+残ったバグ：Localizationを使う際にGetTable関数でWaitForCompletion()が呼び出された、WEB Requestの時Addressablesが用いられる  
+WEBGLはシングルスレッドのでAddressablesは使えないため、言語変更はダブルクリックが必要(ロード待ち？)、また、UnityRoomでAddressablesの問題もあるので、UnityRoomでうまく実行できない  

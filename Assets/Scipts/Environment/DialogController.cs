@@ -161,6 +161,7 @@ public class DialogController : MonoBehaviour
                 {
                     var stringTable = LocalizationSettings.StringDatabase.GetTable("LocalizationStringTable");
                     text_Dialog_Main.text = stringTable.GetEntry("dialogMain").GetLocalizedString();
+                    GlobalDataSave.dialogMainKey = "dialogMain";
                     dialog_Main.SetActive(true);
                     dialog_Sign.SetActive(false);
                     playerController.enabled = false;
