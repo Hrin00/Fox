@@ -8,13 +8,13 @@ public class ClearController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +23,7 @@ public class ClearController : MonoBehaviour
         {
             Destroy(collision.gameObject);
 
-  
+
 
 
             GameObject root = GameObject.Find("Canvas");
@@ -31,7 +31,7 @@ public class ClearController : MonoBehaviour
             GameObject gameOver = root.transform.Find("GameOver").gameObject;
             Text text_gameOver = gameOver.transform.Find("Text_GameOver").gameObject.GetComponent<Text>();
 
-            text_gameOver.text = "恭喜你通关了！";
+            text_gameOver.text = "Game Clear！";
 
             gameOver.SetActive(true);
 

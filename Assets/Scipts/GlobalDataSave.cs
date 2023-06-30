@@ -34,6 +34,11 @@ public class GlobalDataSave : MonoBehaviour
     public float volume = 0;
 
 
+    //Localization
+    public static string dialogMainKey = null;
+    public static string dialogAddKey = null;
+
+
 
     private void Awake()
     {

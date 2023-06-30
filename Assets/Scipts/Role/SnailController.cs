@@ -32,6 +32,7 @@ public class SnailController : RoleController
         if (GlobalDataSave.Instance.snailIndex == 1)
         {
             text_Dialog_Main.text = stringTable.GetEntry("Snail1").GetLocalizedString();
+            GlobalDataSave.dialogMainKey = "Snail1";
             return;
         }
 
@@ -40,6 +41,7 @@ public class SnailController : RoleController
             if (cherry.sum >= 6)
             {
                 text_Dialog_Main.text = stringTable.GetEntry("Snail2").GetLocalizedString();
+                GlobalDataSave.dialogMainKey = "Snail2";
 
                 GameObject temp = GameObject.Instantiate(gem__Diffuse, new Vector2(transform.position.x, transform.position.y + 1.5f), Quaternion.identity);
                 temp.name = "Gem";
@@ -52,12 +54,14 @@ public class SnailController : RoleController
             else
             {
                 text_Dialog_Main.text = stringTable.GetEntry("Snail1").GetLocalizedString();
+                GlobalDataSave.dialogMainKey = "Snail1";
             }
 
         }
         else
         {
             text_Dialog_Main.text = stringTable.GetEntry("Snail3").GetLocalizedString();
+            GlobalDataSave.dialogMainKey = "Snail3";
         }
 
     }

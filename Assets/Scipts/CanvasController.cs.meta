@@ -3,7 +3,14 @@ guid: d1d44c1936c299e4aab90a2c0fca04a3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pause: {instanceID: 0}
+  - menu: {instanceID: 0}
+  - audioMixer: {instanceID: 0}
+  - localSettings: {instanceID: 0}
+  - zh: {fileID: 11400000, guid: 46870ca600e6b444a8ae73ef12ba8f77, type: 2}
+  - jp: {fileID: 11400000, guid: da369ef2f1225ec46beca21e5d24e14a, type: 2}
+  - en: {fileID: 11400000, guid: 84ab89832aac926458a171b738e40af6, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

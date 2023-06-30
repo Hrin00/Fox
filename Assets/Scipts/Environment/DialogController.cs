@@ -70,26 +70,35 @@ public class DialogController : MonoBehaviour
         //text_Dialog_Sign.text = stringTable.GetEntry("dialogSignBase").GetLocalizedString(LocalizationSettings.SelectedLocaleAsync.Result);
 
 
-        Debug.Log(gameObject.name);
-
-
-
-        if (gameObject.name.Contains("house"))
-            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd1").GetLocalizedString();
-        else if (gameObject.name.Contains("sign"))
-            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd2").GetLocalizedString();
-        else if (gameObject.name.Contains("Out"))
-            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd3").GetLocalizedString();
-        else if (gameObject.tag.Equals("Roll"))
-            text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd4").GetLocalizedString();
-
-
-
-
-
 
         if (collision.name.Equals("Player"))
         {
+
+            Debug.Log(gameObject.name);
+
+            if (gameObject.name.Contains("house"))
+            {
+                text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd1").GetLocalizedString();
+                GlobalDataSave.dialogAddKey = "dialogSignAdd1";
+            }
+            else if (gameObject.name.Contains("sign"))
+            {
+                text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd2").GetLocalizedString();
+                GlobalDataSave.dialogAddKey = "dialogSignAdd2";
+            }
+            else if (gameObject.name.Contains("Out"))
+            {
+                text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd3").GetLocalizedString();
+                GlobalDataSave.dialogAddKey = "dialogSignAdd3";
+            }
+            else if (gameObject.tag.Equals("Roll"))
+            {
+                text_Dialog_Sign.text = stringTable.GetEntry("dialogSignAdd4").GetLocalizedString();
+                GlobalDataSave.dialogAddKey = "dialogSignAdd4";
+            }
+
+
+
 
             dialog_Sign.SetActive(true);
         }

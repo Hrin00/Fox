@@ -18,3 +18,7 @@ Only Chinese , going to add Japanese and English version in the near future
 实装了localization功能，并且初步将3种语言文本配置完成-->中文为本人(母语者)撰写/日语为研究室成员(母语者)撰写/英语为DeepL翻译后本人润色  
 ローカライズ機能を実装した、テキストを3ヵ国語に初期配置完了-->中国語は本人から(母语者)/日本語はラボメンバーから(母语者)/英語はDeepLが翻訳して修正した  
 The localization function was installed and the initial configuration of the text in 3 languages was completed --> Chinese by myself (native speaker) / Japanese by a member of the research lab (native speaker) / English translated by DeepL and then retouched by myself  
+
+2023/6/30  
+紹介動画アップロード: https://drive.google.com/file/d/1A9CAOQ7rD23anJNGAPONKeCBZMONncK5/view?usp=sharing    
+Localizationバグ修正  
