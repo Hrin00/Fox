@@ -3,7 +3,7 @@
 横板过关游戏  
 横スクロールアクションゲーム  
 Side scrolling action game  
-紹介動画: [https://www.youtube.com/watch?v=VWwDGxdh16k](https://www.youtube.com/watch?v=4N_-Rcjt4_0)    
+紹介動画: https://www.youtube.com/watch?v=4N_-Rcjt4_0    
 
 Unity Version 2021.3.19f1 在此版本Unity下会报错，但无视错误可正常运行  
 Unity Version 2021.3.19f1 でエラがあるが、エラを無視して実行可能  
