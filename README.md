@@ -20,7 +20,7 @@ Only Chinese , going to add Japanese and English version in the near future
 The localization function was installed and the initial configuration of the text in 3 languages was completed --> Chinese by myself (native speaker) / Japanese by a member of the research lab (native speaker) / English translated by DeepL and then retouched by myself  
 
 2023/6/30  
-紹介動画アップロード: https://www.youtube.com/watch?v=VWwDGxdh16k    
+紹介動画アップロード: [https://www.youtube.com/watch?v=VWwDGxdh16k](https://www.youtube.com/watch?v=4N_-Rcjt4_0)    
 Localizationバグ修正  
 
 2023/7/1  
