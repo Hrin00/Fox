@@ -2,7 +2,8 @@
 
 横板过关游戏  
 横スクロールアクションゲーム  
-Side scrolling action game
+Side scrolling action game  
+紹介動画: https://www.youtube.com/watch?v=4N_-Rcjt4_0    
 
 Unity Version 2021.3.19f1 在此版本Unity下会报错，但无视错误可正常运行  
 Unity Version 2021.3.19f1 でエラがあるが、エラを無視して実行可能  
@@ -20,5 +21,15 @@ Only Chinese , going to add Japanese and English version in the near future
 The localization function was installed and the initial configuration of the text in 3 languages was completed --> Chinese by myself (native speaker) / Japanese by a member of the research lab (native speaker) / English translated by DeepL and then retouched by myself  
 
 2023/6/30  
-紹介動画アップロード: https://drive.google.com/file/d/1A9CAOQ7rD23anJNGAPONKeCBZMONncK5/view?usp=sharing    
+紹介動画アップロード
 Localizationバグ修正  
+
+2023/7/1  
+WEBGLで出力する際の文字化けバグ修正、Localization(MainKey)バグ修正、Game Overテキスト修正  
+
+残ったバグ：Localizationを使う際にGetTable関数でWaitForCompletion()が呼び出された、WEB Requestの時Addressablesが用いられる  
+WEBGLはシングルスレッドのでAddressablesは使えないため、言語変更はダブルクリックが必要(ロード待ち？)、また、UnityRoomでAddressablesの問題もあるので、UnityRoomでうまく実行できない  
+
+2023/7/1  
+紹介動画修正  
+

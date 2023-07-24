@@ -496,11 +496,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_Font: {fileID: 12800000, guid: e7d4a9d1001374547a58d52aa9015af3, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 67
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1299,7 +1299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F60\u6B7B\u4E86,\u6E38\u620F\u7ED3\u675F\uFF01"
+  m_Text: Game Over
 --- !u!1 &140973938932855954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,11 +3304,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_Font: {fileID: 12800000, guid: e7d4a9d1001374547a58d52aa9015af3, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 67
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3761,7 +3761,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: e7d4a9d1001374547a58d52aa9015af3, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
